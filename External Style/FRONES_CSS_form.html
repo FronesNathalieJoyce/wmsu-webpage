@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FRONES_CSS_form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <link rel="stylesheet" href="formstyle.css">
+
+</head>
+<body>
+
+<div class="bg-img">
+	<form action="/action_page.php" class="container">
+		<h1>Registration Form</h1>
+		<hr>
+		<div class="row">
+			<div class="col-50">
+				<label for="fname"><b>First Name</b></label>
+				<input type="text" id="fname" name="firstname" placeholder="Enter First Name" required>
+				<label for="email"><b>Email</b></label>
+				<input type="text" id="email" name="email" placeholder="someone@example.com" required>
+				<label for="bday"><b>Birthdate</b></label>
+				<input type="date" id="bday" name="bday" required>
+				
+
+            <div class="row">
+              <div class="col-50">
+                <label for="brgy"><b>Barangay</b></label>
+                <input type="text" id="brgy" name="brgy" placeholder="ex: Baliwasan" required>
+              </div>
+              <div class="col-50">
+                <label for="city"><b>City</b></label>
+                <input type="text" id="city" name="city" placeholder="Zamboanga City" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <label for="lname"><b>Last Name</b></label>
+            <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id="psw" name="psw" required>
+            <label for="age"><b>Age</b></label>
+            <input type="number" id="age" name="age" min="6" max="65" required>
+            <div class="row">
+              <div class="col-50">
+                <label for="country"><b>Country</b></label>
+                <input type="text" id="country" name="country" placeholder="Philippines">
+              </div>
+              <div class="col-50">
+                <label for="zip"><b>Zip</b></label>
+                <input type="text" id="zip" name="zip" placeholder="7000">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+		<label for="course">Course</label>
+			<select id="course" name="course" required>
+			<option value="">(Choose from the following)</option>
+			<option value="BSIT">BS Information Technology</option>
+			<option value="BSCS">BS Computer Science</option>
+			<option value="MIT">Master in Information Technology</option>
+			</select>
+		<label for="status"><b>Register as:</b>
+		<br>
+		<br>
+		
+		<label class="con"><b>Student</b>
+		<input type="radio" checked="checked" name="radio">
+		<span class="checkmark"></span>
+		</label>
+		<label class="con"><b>Teacher</b>
+		<input type="radio" name="radio">
+		<span class="checkmark"></span>
+		</label>
+			
+			
+		<hr>
+        <label>
+          <input type="checkbox" checked="checked" name="agree"> I agree to the Terms and Policy.
+        </label>
+        <button type="submit" class="sub">Register</button>
+		<input type="reset" class="rebtn" value="Reset data">
+      </form>
+    </div>
+  </div>	
+
+    
+  </form>
+</div>
+
+
+</body>
+</html>
